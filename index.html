@@ -18,6 +18,61 @@
     <title>Practica de DOM</title>
   </head>
   <body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <section class="bg-dark text-light py-4">
+            <article class="container">
+                <h1>Practida de DOM</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe adipisci cumque quidem, aliquam temporibus earum. Voluptate velit consectetur excepturi alias doloribus, reiciendis temporibus perspiciatis est accusamus, earum laudantium qui omnis reprehenderit praesentium explicabo dolorum ad molestias, totam esse adipisci laboriosam quo ex. Labore expedita aut inventore id culpa placeat!</p>
+                <button class="btn btn-primary" onclick="cambiarTitulo()">Cambiar</button>
+            </article>
+        </section>
+        <section class="container my-5">
+            <h2>Crear elementos HTML desde el archivo de JS</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero sed, aut maxime culpa soluta officia sit atque modi accusantium dicta molestias rem. Nobis, eos non voluptates exercitationem tempora error reprehenderit accusamus vitae quidem impedit, inventore totam rem! Magni minima laudantium totam iusto repellat distinctio sapiente id, voluptates, et placeat delectus! Reprehenderit dicta beatae odit nesciunt eos voluptates modi, quod aliquid praesentium. Deleniti necessitatibus doloribus labore officiis enim blanditiis, ex beatae! Maiores, iste repudiandae blanditiis nobis doloremque quisquam dolore pariatur magni earum nulla voluptates incidunt repellendus accusamus aliquam fuga iusto ipsam, amet corrupti suscipit cupiditate. Quis labore explicabo neque sed laboriosam?</p>
+            <button class="btn btn-outline-primary" onclick="verMas()" id="btnVerMas">Ver mas...</button>
+        </section>
+    </main>
+    <footer class="bg-dark text-light text-center py-4">
+        <p>&copy; Todos los derechos reservados</p>
+    </footer>
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
